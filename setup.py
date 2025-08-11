@@ -1,7 +1,5 @@
-# setup.py
 from setuptools import setup, Extension
 import pybind11
-import sys
 
 ext_modules = [
     Extension(
@@ -16,8 +14,20 @@ ext_modules = [
 setup(
     name="dynamic-segment-tree",
     version="0.1.0",
-    description="Dynamic segment tree (C++) with sparse per-node category counts",
-    packages=["dynamic_segment_tree"],
+    author="Abdullah Enes Oncu",
+    author_email="abdullahenesoncu@gmail.com",
+    description="Dynamic segment tree with Python bindings",
+    long_description=open("README.md").read(),
+    long_description_content_type="text/markdown",
     ext_modules=ext_modules,
-    install_requires=["pybind11"],
+    packages=["dynamic_segment_tree"],
+    install_requires=["pybind11>=2.6.0"],
+    python_requires=">=3.7",
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "Programming Language :: C++",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+    ],
+    zip_safe=False,
 )
