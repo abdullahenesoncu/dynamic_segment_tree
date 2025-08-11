@@ -1,7 +1,0 @@
-Metadata-Version: 2.4
-Name: dynamic-segment-tree
-Version: 0.1.0
-Summary: Dynamic segment tree (C++) with sparse per-node category counts
-Requires-Dist: pybind11
-Dynamic: requires-dist
-Dynamic: summary
